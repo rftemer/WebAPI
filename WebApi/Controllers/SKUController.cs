@@ -29,7 +29,7 @@ namespace WebApi.Controllers
 
             return response;
         }
-        //PUT api/sku/id nao foi testado
+        //PUT api/sku/id?{...}
         public HttpResponseMessage Update(int id, SKU item)
         {
             SyncDataBase.Data.Remove(SyncDataBase.Data.Find(p => p.parametros.idProduto == id));
