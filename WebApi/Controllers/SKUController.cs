@@ -9,7 +9,6 @@ using MongoDB.Driver.Builders;
 using MongoDB.Driver.GridFS;
 using MongoDB.Driver.Linq;
 using MongoDB.Driver;
-using MongoDB.Bson;
 using MongoDB.Driver.Wrappers;
 using System.IO;
 using Newtonsoft.Json.Linq;
