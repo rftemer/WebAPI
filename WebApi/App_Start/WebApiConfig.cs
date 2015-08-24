@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
+using WebApi.App_Start;
 
 namespace WebApi
 {
@@ -19,6 +20,8 @@ namespace WebApi
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
+
+            SyncDataBase.SyncSKU();
         }
     }
 }
